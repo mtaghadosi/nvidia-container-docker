@@ -25,7 +25,7 @@ apt-get install -y nvidia-docker2
 #    "default-runtime": "nvidia"
 #}
 sudo systemctl restart docker
-# Use --runtime=nvidia flag when running the container. 
+# Use --runtime=nvidia flag when running the container. Or --gpus for older versions of docker 
 # inside the container do nvidia-smi to see you are able to access the nvidia GPU or not
 
 # created by Mohammad Taghadosi

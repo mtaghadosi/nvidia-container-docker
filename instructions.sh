@@ -1,5 +1,6 @@
 #!/bin/bash
-
+# usefull links: https://catalog.ngc.nvidia.com/orgs/nvidia/containers/cuda/tags
+# https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/user-guide.html
 wget https://nvidia.github.io/nvidia-docker/gpgkey --no-check-certificate
 sudo apt-key add gpgkey
 distribution=$(. /etc/os-release;echo $ID$VERSION_ID)

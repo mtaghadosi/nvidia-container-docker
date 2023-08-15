@@ -13,7 +13,10 @@ grep "  name:" /etc/cdi/nvidia.yaml #check the device name
 
 # UPDATE THE DOCKER DEAMON FILE OR INSTALL THE BELOW PACKAGE TO DO IT AUTOMATICALLY:
 apt-get install -y nvidia-docker2
-
+# Then run the below command to apply the configuration to docker runtime then restart the docker daemon
+sudo nvidia-ctk runtime configure --runtime=docker --set-as-default
+sudo systemctl restart docker
+ 
 # Check to see the file is properly configured, it should be something like below:
 #{
 #    "runtimes": {
